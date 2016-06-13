@@ -17,7 +17,6 @@ Digital Ocean: Ubuntu 12.04 LTS, Ubuntu 14.04 LTS, Debian 7 (Wheezy)
 
 Rackspace: Ubuntu 12.04, Ubuntu 14.04
 
-Copyright 2013-2014 Viljo Viitanen <viljo.viitanen@iki.fi> and contributors.
 Licensed under GPL version 2 or any later version.
 
 INSTALLATION INSTRUCTIONS
@@ -36,11 +35,11 @@ Allow the following through the firewall ("security group")
 Common
 ------
 
-    wget https://raw.github.com/viljoviitanen/setup-simple-pptp-vpn/master/setup.sh
-    sudo sh setup.sh
+    wget https://raw.github.com/ace-yang/setup-simple-pptp-vpn/master/setup.sh
+    sudo sh setup.sh -u vpnUserName -P vpnPassword
 
 Let the script run. Take note if the server external ip address
-detection is succesful.  
+detection is successful. If "-u vpnUserName -P vpnPassword" missed, default username/password will be created and displayed.
 
 Get your computer to use the VPN. Try googling for instructions, e.g.
 https://www.google.com/#q=setup+pptp+windows+8
